@@ -19,8 +19,8 @@ grunt.initConfig({
 
   watch: {
     scripts: {
-      files: ['js/*.js'],
-      tasks: ['jshint'],
+      files: ['js/*.js', 'sass/*.sass'],
+      tasks: ['jshint', 'sass'],
       options: {
         spawn: false,
       },

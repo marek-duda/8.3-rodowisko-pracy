@@ -19,12 +19,20 @@ grunt.initConfig({
 
   watch: {
     scripts: {
-      files: ['js/*.js', 'sass/*.sass'],
-      tasks: ['jshint', 'sass'],
+      files: ['js/*.js'],
+      tasks: ['jshint'],
       options: {
         spawn: false,
       },
-    } 
+    },
+     
+    styles: {
+      files: ['sass/*.sass'],
+      tasks: ['sass'],
+      options: {
+        spawn: false,
+      },
+    },  
   }
     
 });
